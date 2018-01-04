@@ -6,27 +6,31 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="Content-Security-Policy"
+     content="default-src 'src';
+     style-src 'self' https://fonts.googleapis.com;font-src
+     font-src 'self' https://fonts.gstatic.com;
+     img-src *;" />
 
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="www/js/index.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="www/css/index.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="www/css/index.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
     <link rel="stylesheet" href="www/css/w3.css">
 
     <title>Example App</title>
 </head>
 
 <body class="w3-dark-gray">
-    <div class="w3-bar w3-green">
-      <i class="fa fa-bars"></i>
-      <p id=movies2018>
-          Movies 2018
-      </p>
+    <div class="w3-display-container">
+      <img id="happy_developer" src="www/img/pexels_img1.jpeg" alt="pexels_img1"/>
+      <div id="grow"class="w3-display-middle w3-wide "> Develop </div>
     </div>
-
     <form class="w3-container w3-display-middle">
       <input class="w3-input" type="text" />
 
